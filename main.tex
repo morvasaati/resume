@@ -1,0 +1,392 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[document]{ragged2e}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Morva Saaty} \\ \vspace{1pt}
+    \small (+1)540-385-1764 $|$ \href{mailto:x@x.com}{morvasaaty@vt.edu} $|$ 
+    \href{https://linkedin.com/in/morva-saaty}{\underline{linkedin.com/in/morva-saaty}} 
+   % \href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Summary}
+ \justify{I am a Ph.D. student at Virginia Tech pursuing my doctoral degree in Computer Science \& Applications. I have a strong research background in Human-Computer Interaction (HCI), User Experience Design, Visual Attention, and Gamification. I am also proficient in program design and development using Python, Java, and C++. With a broad skill set covering qualitative and quantitative analysis methods, experimental research, and knowledge of multiple language programming languages, I am constantly looking for opportunities to improve, extremely passionate to broaden my research experience, and highly motivated to learn.}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Virginia Polytechnic Institute and State University}{Aug. 2020 -- Expected May. 2024}
+      {Ph.D. in Computer Science and Applications - GPA: 4/4.0}{Blacksburg, VA, US}
+    \resumeSubheading
+      {University of Tehran}{Sep. 2016 - Dec 2018}
+      {M.Sc. in Information Technology Engineering - GPA: 4/4.0}{Tehran, Iran}
+    \resumeSubheading
+      {University of Tehran}{Sep. 2011 - June. 2016}
+      {B.Sc. in Information Technology Engineering}{Tehran, Iran}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graduate Research Assistant}{June 2019 -- Present}
+      {Virginia Polytechnic Institute and State University}{Blacksburg, VA, US}
+      \resumeItemListStart
+        \resumeItem{%Developed an Android mobile application to minimize disorientation in Informal Learning Environments using Java, Android Studio, and PostgreSQL to store data\\
+        Designing Mobile Applications to Minimize Disorientation in Informal Learning Environments(ILE) with a focus on children by using Java, Android Studio, and PostgreSQL to store data. (Paper is accepted in IDC 2021) \\
+        \underline{Methods:} Participant Observation, Experiment Design, Qualitative/Quantitative Analysis, App Development}
+        \resumeItem{Exploring social experiences afforded by app/game/technology-mediated and understanding design considerations for remote recreation solutions.  \\
+         \underline{Methods:} Surveys, Diaries, Focus Groups, Qualitative Analysis}
+        \resumeItem{Understanding user needs and motivational factors to design and develop a location-based mobile exergame which can encourage users to do exercise for long term while engaging them in outdoors. \\
+        \underline{Methods:} Social Media Analysis (NLP and Machine Learning techniques), Diaries, Focus Groups, Qualitative Analysis, Prototyping, Personas}
+     %   \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Graduate Research Assistant}{July. 2017 - Jan. 2019}
+      {University of Tehran}{Tehran, Iran}
+      \resumeItemListStart
+        \resumeItem{Master's Thesis: Studying the Effect of Audio Features on Players' Visual Attention Map contributing toward a Conceptual Audio-Visual Game Attention Model for Efficient Bitrate Allocation in Cloud Gaming. - using Eye Tracking system. (Paper is submitted)  \\
+        \underline{Methods:} Experiment Design, Semi-Structured Interviews, Qualitative/Quantitative Analysis}
+      %  \resumeItem{Communicate with managers to set up campus computers used on campus}
+       % \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        %\resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+    
+
+
+    %\resumeSubheading
+     % {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+      %{Southwestern University}{Georgetown, TX}
+      %\resumeItemListStart
+       % \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        %\resumeItem{Developed a game in Java to test the generated dungeons}
+        %\resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        %\resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        %\resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        %\resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+     % \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+  
+   %-----------Publications-----------
+\section{Publications}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\textbf{Conference Proceedings} }{}
+          \resumeItemListStart
+            \resumeItem{\textbf{[CHI Play 2021]} \textbf{Morva Saaty}, Derek Haqq, Devin B. Toms, Ibrahim Eltahir, and D. Scott McCrickard. "A Study on Pokémon GO: Exploring the Potential of Location-based Mobile Exergames in Connecting Players with Nature.” In Proceedings of the Annual Symposium on Computer-Human Interaction in Play, Virtual Event, Austria, 2021.}
+        \resumeItemListEnd 
+        \resumeItemListStart
+            \resumeItem{\textbf{[CSCW 2021]} Neelma Bhatti, Lindah Kotut, Derek Haqq, Timothy L. Stelter, \textbf{Morva Saaty}, Aisling Kelliher,  and D. Scott McCrickard. “Parenting, Studying And Working At Home In A Foreign Country: How International Student Mothers In The US Use Screen Media For And With Their Young Children.”  Computer Supported Cooperative Work (CSCW), 2021.}
+        \resumeItemListEnd
+        \resumeItemListStart
+            \resumeItem{\textbf{[IDC 2021 - Best paper honorable mention award]} Neelma Bhatti, \textbf{Morva Saaty}, and Scott McCrickard. "Designing Mobile Applications to Minimize Disorientation in Informal Learning Environments." In Interaction Design and Children, pp. 196-203. 2021.}
+        \resumeItemListEnd
+        \resumeItemListStart
+            \resumeItem{\textbf{[CHI Play 2021]} Derek Haqq, \textbf{Morva Saaty}, Jonathan T. Rukaj, Saylee Marulkar, Justin Israel, Emily Newton, Rudra Patel, Stephen Tan,  and D. Scott McCrickard. “Toward a Design Theory of Game-Mediated Social Experiences - A Study of Among Us.” In Proceedings of the Annual Symposium on Computer-Human Interaction in Play, 2021.}
+        \resumeItemListEnd
+         \vspace{-0.4cm}
+        \resumeItemListStart
+            \resumeItem{\textbf{[CHItaly 2021 - Nature HCI Workshop]} \textbf{Morva Saaty}, Derek Haqq, Stephen Dooley, Jerin Manalel, Sophia Pentakalos, Samridhi Roshan, Devin Toms, and D. Scott McCrickard. "Exergames and Nature." In Proceedings of the CEUR Workshop, 2901, pp. 8–15. 2021.}    
+        \resumeItemListEnd
+        \resumeItemListStart
+            \resumeItem{\textbf{[CHItaly 2021 - Nature HCI Workshop]} Derek Haqq, \textbf{Morva Saaty}, and D. Scott McCrickard. "Re (Connecting) through Shared Remote Outdoor Play." In Proceedings of the CEUR Workshop, 2901, pp. 32–40. 2021.} 
+        \resumeItemListEnd
+        \vspace{-0.4cm}
+        \resumeItemListStart
+            \resumeItem{\textbf{[CHI 2020]} Lindah Kotut, Neelma Bhatti, \textbf{Morva Saaty}, Derek Haqq, Timothy L. Stelter and D. Scott McCrickard. “Clash of Times: Respectful Technology Space for Integrating Community Stories in Intangible Exhibits.” ACM CHI Conference on Human Factors in Computing Systems., Honolulu, HI. April 2020. [24.3\% Acceptance Rate]}
+        \resumeItemListEnd
+
+         % \resumeItemListStart
+          %  \resumeItem{     
+           %[CHI 2021] Morva Saaty, Mahmoud Reza Hashemi. "A Conceptual Audio-Visual Game Attention Model for Efficient Bitrate Allocation in Cloud Gaming". ACM CHI Conference on Human Factors in Computing Systems. (Submitted) }
+          %\resumeItemListEnd 
+    \resumeSubHeadingListEnd
+    
+  %------------- Development Experience --------------
+\section{Development Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Thesis Project}{June. 2016 - Aug. 2016}
+      {University of Tehran}{Tehran, Iran}
+      \resumeItemListStart
+        \resumeItem{Design and Implementation of the social network system which is focused on transporting the information and media between members, using Ruby on Rails, REST API}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Web Developer}{June. 2015 - Aug. 2015}
+      {Mohandesin Moshaver Memari Va Mohit}{Tehran, Iran}
+      \resumeItemListStart
+        \resumeItem{Back-end and Front-end Web developer of the company’s website, using Ruby on Rails, HTML, CSS, JavaScript and jQuery}
+    \resumeItemListEnd
+ \resumeSubHeadingListEnd
+ 
+
+    
+   %-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R, Matlab} \\
+    \textbf{Research Methods}{:surveys, interviewing, diary studies, focus groups, participant observation | Wireframing, Prototyping, Personas, Heuristic Evaluation  | Experimental Design, Statistical Hypothesis Testing}\\
+     \textbf{Frameworks}{:Ruby on Rails, Windows Form Applications using C\#}\\
+  %   \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Visual Studio, PyCharm, IntelliJ, Eclipse, Gephi, Tableau, Rstudio, Android Studio, Observable, Elastic Search, Figma} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, D3, PyTorch}
+    }}
+ \end{itemize}
+%-----------Academic PROJECTS-----------
+\section{Academic Projects}
+    \resumeSubHeadingListStart
+    
+     \resumeProjectHeading
+      {\textbf{Introduction to Deep Learning Course} $|$ \emph{Python, Pytorch}}{Jan. 2021 - May. 2021}
+      \resumeItemListStart
+        \resumeItem{Implementation of different CNN models for automatic detection of COVID-19 based of chest X-ray images.}
+      \resumeItemListEnd 
+          
+     \resumeProjectHeading
+          {\textbf{Information Visualization Course} $|$ \emph{D3.js, Tableau, Observable}}{Aug. 2020 - Dec. 2020}
+          \resumeItemListStart
+            \resumeItem{Design and implementation of the visualization related to Covid-19 and Air quality data.}
+          \resumeItemListEnd 
+
+         \resumeProjectHeading
+          {\textbf{Introduction to Big Data} $|$ \emph{Docker, Elastic Search, Hadoop, Scala}}{Sep. 2017 - Jan. 2018}
+          \resumeItemListStart
+            \resumeItem{Designing and developing a reliable and scalabe system with specific features (Searching, Visualizing, and Distribution of nodes) }
+          \resumeItemListEnd 
+    
+      \resumeProjectHeading
+          {\textbf{Statistical Inference Course} $|$ \emph{R}}{Feb. 2017 - June. 2017}
+          \resumeItemListStart
+            \resumeItem{tatistical analysis of the real dataset from kaggle.com by using ANOVA table and calculating other parameters (such as power, p-value, ... )}
+          \resumeItemListEnd 
+
+      \resumeProjectHeading
+          {\textbf{Pattern Recognition Course} $|$ \emph{Python, Matlab}}{Sep. 2016 - Jan. 2017}
+          \resumeItemListStart
+            \resumeItem{Design and Implementation of neural networks such as MLP and RBF, then train those for classification of the special given dataset.}
+            \resumeItem{Implementation of clustering methods(such as KNN, Naïve Bayes, ...)}
+          \resumeItemListEnd    
+          
+         \resumeProjectHeading
+          {\textbf{Social Networks Course} $|$ \emph{Java, Gephi}}{Sep. 2016 - Jan. 2017}
+          \resumeItemListStart
+            \resumeItem{Implementation of graphs characteristics like betweenness centrality and clustering coefficiency on large graph.}
+          \resumeItemListEnd 
+          
+     \resumeProjectHeading
+          {\textbf{Internet Engineering Course} $|$ \emph{Ruby on Rails}}{Feb. 2015 - June. 2015}
+          \resumeItemListStart
+            \resumeItem{Design and Implementation of the FitNet website for the purpose of helping athletes to facilitate their exercise while using a device called "TotalCore."}
+          \resumeItemListEnd 
+
+     \resumeProjectHeading
+          {\textbf{Artificial Intelligence Course} $|$ \emph{Python}}{Sep. 2014 - Jan. 2015}
+          \resumeItemListStart
+            \resumeItem{Implementation of Minimax algorithm with Alpha-Beta Pruning, Connect-four game}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{System Analysis and Design Course} $|$ \emph{C\#, Visual Studio}}{Feb. 2014 - June. 2014}
+          \resumeItemListStart
+            \resumeItem{Implementation of an email-based communication gateway for office of graduate studies, using Three-layered architecture and MVC pattern}
+          \resumeItemListEnd 
+          
+    \resumeProjectHeading
+          {\textbf{Computer Networks Course} $|$ \emph{C++, Socket Programming APIs}}{Feb. 2014 - June. 2014}
+          \resumeItemListStart
+            \resumeItem{Implementation of a document sharing network with emphasis on OSI protocol stack}
+          \resumeItemListEnd           
+          
+  %   \resumeProjectHeading
+   %       {\textbf{Operating System Course} $|$ \emph{C, C++}}{Sep. 2013 - Jan. 2014}
+    %      \resumeItemListStart
+     %       \resumeItem{Design and implementation of a multi-thread schema for memory management of a shared memory}            \resumeItem{Implementation of a CPU Scheduler}
+      %    \resumeItemListEnd 
+          
+    \resumeProjectHeading
+          {\textbf{Advanced Programming Course} $|$ \emph{C++, Socket Programming APIs}}{Feb. 2012 - June. 2012}
+          \resumeItemListStart
+            \resumeItem{Design and implementation of multithread social network application,(similar to Twitter)}
+          \resumeItemListEnd 
+          
+           % \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+          %  \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+         %   \resumeItem{Visualized GitHub data to show collaboration}
+        %    \resumeItem{Used Celery and Redis for asynchronous tasks}
+       %   \resumeItemListEnd
+      %\resumeProjectHeading
+          %{\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          %\resumeItemListStart
+            %\resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            %\resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+           % \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+           % \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          %\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+%-----------PROGRAMMING SKILLS-----------
+
+
+
+%-------------------------------------------
+
+    
+    %-----------Teaching Experience -----------
+\section{Teaching Experience}
+    \resumeSubHeadingListStart
+    
+     \resumeProjectHeading
+        {\textbf{Graduate Teaching Assistant} $|$ \emph{Virginia Tech, Blacksburg, VA}}{}
+          \resumeItemListStart
+            \resumeItem{CS 5764: Information Visualization}{| Fall 2021}
+            \resumeItem{CS 3724: Human Computer Introduction}{| Fall 2020}
+            \resumeItem{CS 3724/5714: Introduction to Human Computer Interaction + Usability Engineering}{|  Two Semesters (Spring 2021, Summer 2021)}        
+        \resumeItemListEnd 
+        
+     \resumeProjectHeading
+        {\textbf{Graduate Teaching Assistant} $|$ \emph{University of Tehran, Tehran, Iran}}{}
+          \resumeItemListStart
+            \resumeItem{{Human-Computer Interaction Course}\emph{}} {|  Four semesters (Spring 2017, Fall 2017, Spring 2018, Fall 2019)}
+            \resumeItem{Data Transmission Course} {| Fall 2017}  
+            \resumeItem{Artificial Intelligence Course} {| Two Semesters (Spring 2017, Fall 2014)}  
+        \resumeItemListEnd 
+        
+    \resumeSubHeadingListEnd
+
+
+
+\end{document}
